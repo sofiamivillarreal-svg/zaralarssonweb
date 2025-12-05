@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierto Zara Larsson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>   
+        <div id="logo">
+            <img src="logo.png" alt="Logo de Zara Larsson">
+        </div>
+        
+    <nav class="contenedormenu">
+        
+    <input type="checkbox" id="interruptor-id" class="interruptor-menu">
+
+    <label for="interruptor-id" class="hamburguesa-boton">
+        <span class="barrita"></span>
+        <span class="barrita"></span>
+        <span class="barrita"></span>
+    </label>
+
+    <ul class="menufondo">
+        <li class="item"><a href="#inicio">Inicio</a></li> 
+        <li class="item"><a href="#compra">Comprar</a></li>
+        <li class="item"><a href="#comollegar">Cómo Llegar</a></li>
+        <li class="item"><a href="#tienda">tienda</a></li>
+        <li class="item"><a href="#preguntasfrecuentes">Preguntas Frecuentes</a></li> 
+        <li class="item"><a href="#historial">Historial</a></li>   
+        <li class="item"><a href="#contacto">Contacto</a></li> 
+    </ul>
+</nav>
+
+    </header>
+    <div id="banner">
+    </div>
+   
+    <section id="inicio">
+        <div class="introduccion-caja">
+            <h1>Midnight Sun Tour 2026</h1>
+            <h2>EL 20 DE MARZO LLEGA ZARA LARSSON AL MOVISTAR ARENA</h2>
+            <p>
+            Prepárate para la experiencia musical que desafía a la noche: el Zara Larsson Midnight Sun Tour 2026 ha llegado para incendiar el verano. Inspirada en el fenómeno nórdico donde el sol nunca se oculta, esta gira es una promesa de energía que simplemente no se detiene.
+            El concepto del Sol de Medianoche se traduce en un espectáculo de luz, sonido y movimiento diseñado para ser tan brillante como el propio fenómeno natural. Zara Larsson, te invita a sumergirte en un mundo donde el pop futurista se encuentra con el máximo color.
+            </p>
+        </div>
+        
+        
+        <div class="afiche">
+            <img src="afiche.jpg" alt="Afiche">
+        </div>
+ <div id="compra">
+    <div class="info-compra">
+    <div class="rectangulo-fecha">20 DE MARZO 2026</div>
+    
+    <button 
+        class="boton-compra" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#seccion-compra" 
+        aria-expanded="false" 
+        aria-controls="seccion-compra">
+        COMPRAR ENTRADA
+    </button>
+</div>
+</div>
+
+    
+<div class="collapse" id="seccion-compra">
+    <section id="compra">
+        <div class="compra-contenedor">
+            <div class="compra-sector">
+                <h3>Mapa de Sectores</h3>
+                <img src="sectores.png" alt="sectores">
+            </div>
+
+            <div class="seleccion-formulario">
+                <h3>Selecciona tus Entradas</h3>
+                <form id="formulario-compra">
+                    <details class="selector-sector">
+                        <summary>Elegir Sector</summary>
+                        <ul class="opciones-sector">
+                            <li data-sector="vip">Campo Delantero</li>
+                            <li data-sector="general">Campo General</li>
+                            <li data-sector="baja">Platea Baja</li>
+                            <li data-sector="media">Platea Media</li>
+                            <li data-sector="alta">Platea Alta</li>
+                        </ul>
+                    </details>
+
+                    <label for="cantidad">Cantidad de Entradas:</label>
+                    <input type="text" id="cantidad" name="cantidad" placeholder="" > 
+                    <h4>Datos del Comprador</h4>
+                    <input type="text" name="nombre" placeholder="Nombre Completo"> 
+                    <input type="text" name="dni" placeholder="DNI / Pasaporte"> 
+                    
+                    <h4>Datos de Pago</h4>
+                    <input type="text" name="tarjeta-numero" placeholder="Número de Tarjeta"> 
+                    <input type="text" name="vencimiento" placeholder="MM/AA"> 
+                    <input type="text" name="cvc" placeholder="CVC"> 
+
+                    <button type="submit" class="boton-finalizar">FINALIZAR COMPRA</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+        </div>
+    </section>
+</div>
+
+
+    <section id="comollegar">
+    
+    <div class="comollegar-contenido">
+        
+        
+        <div class="mapa-caja">
+            <h2>Conocé la mejor forma de venir</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3818375100373!2d-58.45057612506696!3d-34.594504857010286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5eb6fb40a93%3A0x1fcab11b62b55896!2sMovistar%20Arena!5e0!3m2!1ses!2sar!4v1764289875015!5m2!1ses!2sar"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <div class="transporte-imagen-caja">
+            <h3>Medios de transporte</h3>
+            <img src="colectivo.jpg" alt="Mapa">
+        </div>
+
+
+    </div>
+</section>
+<section id="tienda">
+    <h2>Merch Oficial</h2>
+    <div class="productos">
+
+        <div class="tarjeta">
+            <h3>Remera Sun</h3>
+            <img src="remera-sun.png" alt="Remera Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+
+        <div class="tarjeta">
+            <h3>Remera Zara</h3>
+            <img src="remera-zara.png" alt="Remera Zara">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+
+        <div class="tarjeta">
+            <h3>Camiseta Zara</h3>
+            <img src="camiseta.png" alt="Camiseta de fútbol Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+
+        <div class="tarjeta">
+            <h3>Campera Hibiscus</h3>
+            <img src="campera.png" alt="Campera con flores Hibiscus">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+    </div>
+    <button 
+        class="boton-comprar" 
+        style="margin-top: 30px;"
+        data-bs-toggle="collapse" 
+        data-bs-target="#productos-adicionales" 
+        aria-expanded="false" 
+        aria-controls="productos-adicionales"
+    >
+        Ver Más Productos
+    </button>   
+    <div class="collapse productos-ocultos" id="productos-adicionales">     
+        <div class="tarjeta">
+            <h3>Buzo Midnight Sun</h3>
+            <img src="buzo.png" alt="Buzo Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+
+        <div class="tarjeta">
+            <h3>Gorro</h3>
+            <img src="gorro.png" alt="Gorro Rayado Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>  
+        <div class="tarjeta">
+            <h3>Postal</h3>
+            <img src="postal.png" alt="Postal Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+        <div class="tarjeta">
+            <h3>Poster</h3>
+            <img src="poster.png" alt="Poster Midnight Sun">
+            <button class="boton-comprar">Comprar</button> 
+        </div>
+        </div>
+</section>
+    <section id="preguntasfrecuentes">
+    <h2>Preguntas Frecuentes</h2>
+    
+    <div class="preg-contenedor">
+        
+        <details class="preg-item">
+            <summary>¿Qué objetos no están permitidos dentro del Movistar Arena?</summary>
+            <p>Se prohíbe el ingreso de cámaras profesionales, equipos de grabación de audio y video, punteros láser, armas de cualquier tipo, explosivos, cuchillos, aerosoles y envases de vidrio, incluyendo perfumes.</p>
+        </details>
+        
+        <details class="preg-item">
+            <summary>¿Se puede salir y volver a entrar al Movistar Arena?</summary>
+            <p>Una vez que abandonas el estadio, no puedes volver a entrar. En caso de emergencia, habla con el personal de seguridad.</p>
+        </details>
+
+        <details class="preg-item">
+            <summary>¿Hay estacionamiento?</summary>
+            <p>El Movistar Arena no cuenta con estacionamiento propio. Sin embargo, hay estacionamientos públicos y privados en las cercanías.</p>
+        </details>
+        
+        <details class="preg-item">
+            <summary>¿Cuál es la edad mínima para entrar a los espectáculos?</summary>
+            <p>La edad mínima de ingreso es de 16 años. </p>
+        </details>
+
+        <details class="preg-item">
+            <summary>¿Se pueden comprar entradas en el Movistar Arena?</summary>
+            <p>La venta de entradas se realiza principalmente por los canales oficiales online.</p>
+        </details>
+        
+    </div>
+</section>
+<section id="historial">
+    <article class="cuadro-historial">
+    <h3 
+        class="titulo-historial" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#contenido-historial" 
+        aria-expanded="false" 
+        aria-controls="contenido-historial">
+        Historial de Compras
+    </h3>
+    <div class="collapse" id="contenido-historial">       
+        <div class="historial-cuadro">       
+            <div class="detalle-compra">
+                <h4>Detalles del Pedido</h4>
+                <div class="info-bloque">
+                    <p><strong>Fecha:</strong> <span>20/03/26</span></p>
+                    <p><strong>Sector:</strong> <span>Campo delantero</span></p>
+                    <p><strong>Pago:</strong> <span>Tarjeta de crédito</span></p>
+                    <p><strong>Comprobante:</strong> <span>Descargar</span></p>
+                </div>
+            </div>
+            <div class="datos-comprador">
+                <h4>Datos del Comprador</h4>
+                <div class="info-bloque">
+                    <p><strong>Nombre:</strong> <span></span></p>
+                    <p><strong>Apellido:</strong> <span></span></p>
+                    <p><strong>DNI:</strong> <span></span></p>
+                </div>
+            </div>            
+        </div>
+        </div>
+   </article>
+</section>
+<footer id="contacto">
+    <div class="footer-contenedor">
+        
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <p>
+                <strong>Dirección:</strong> Humboldt 450, C1414 CABA, Argentina
+                <strong>Teléfono:</strong> +54 11 5030-7400
+                <strong>Email:</strong> info@zaralarssontour.com
+            </p>
+        </div>
+
+        <div class="redes">
+            <h3>Redes</h3>
+            <div class="iconos">
+                <a href="https://www.instagram.com/zaralarsson/" target="_blank">
+                <img src="instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com/@ZaraLarssonMusicVEVO" target="_blank">
+                 <img src="youtube.png" alt="youtube">
+                </a> 
+                
+                <a href="https://www.tiktok.com/@zaralarsson" target="_blank">
+                <img src="tiktok.png" alt="tiktok">
+                </a>
+                
+            </div>
+            </div>
+
+    </div>
+    <div class="final">
+        <p> 2026 Midnight Sun Tour. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
